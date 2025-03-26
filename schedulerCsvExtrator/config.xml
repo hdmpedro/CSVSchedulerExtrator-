@@ -3,9 +3,9 @@
     <databases>
         <database>
             <name>db1</name>
-            <host>192.168.0.14</host>
+            <host></host>
             <port>3306</port>
-            <databaseName>erp_epracasa_280225</databaseName>
+            <databaseName></databaseName>
             <user>root</user>
             <password></password>
         </database>
@@ -18,7 +18,7 @@
     <queries>
         <query>
             <database-ref>db1</database-ref>
-            <sql>SELECT * FROM marca</sql>
+            <sql>SELECT * FROM </sql>
             <csv>
                 <output-path>/reports/users</output-path>
                 <file-name>marcas.csv</file-name>
