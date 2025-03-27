@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduler-config>
+    <databases>
+        <database>
+            <name>ceps</name>
+            <host>localhost</host>
+            <port>3306</port>
+            <databaseName>ceps</databaseName>
+            <user>root</user>
+            <password></password>
+        </database>
+
+        <database>
+            <name>ceps2</name>
+            <host>localhost</host>
+            <port>3306</port>
+            <databaseName>ceps2</databaseName>
+            <user>root</user>
+            <password></password>
+        </database>
+
+        <database>
+            <name>ceps3</name>
+            <host>localhost</host>
+            <port>3306</port>
+            <databaseName>ceps3</databaseName>
+            <user>root</user>
+            <password></password>
+        </database>
+
+        <database>
+            <name>ceps4</name>
+            <host>localhost</host>
+            <port>3306</port>
+            <databaseName>ceps4</databaseName>
+            <user>root</user>
+            <password></password>
+        </database>
+
+    </databases>
+
+    <schedule>
+        <cron-expression>0/10 * * * * ?</cron-expression>
+    </schedule>
+
+    <queries>
+        <query>
+            <database-ref>ceps</database-ref>
+            <sql>SELECT * FROM buscas</sql>
+            <csv>
+                <output-path>/bancos/ceps/consultas</output-path>
+                <file-name>cepsconsulta.csv</file-name>
+                <delimiter>;</delimiter>
+            </csv>
+        </query>
+
+        <query>
+            <database-ref>ceps2</database-ref>
+            <sql>SELECT * FROM buscas</sql>
+            <csv>
+                <output-path>/bancos/ceps2/consultas</output-path>
+                <file-name>ceps2consulta.csv</file-name>
+                <delimiter>;</delimiter>
+            </csv>
+        </query>
+
+        <query>
+            <database-ref>ceps3</database-ref>
+            <sql>SELECT * FROM buscas</sql>
+            <csv>
+                <output-path>/bancos/ceps3/consultas</output-path>
+                <file-name>ceps3consultas.csv</file-name>
+                <delimiter>;</delimiter>
+            </csv>
+        </query>
+
+        <query>
+            <database-ref>ceps</database-ref>
+            <sql>SELECT * FROM buscas</sql>
+            <csv>
+                <output-path>/bancos/ceps4/consultas</output-path>
+                <file-name>ceps4consulta.csv</file-name>
+                <delimiter>;</delimiter>
+            </csv>
+        </query>
+
+    </queries>
+</scheduler-config>

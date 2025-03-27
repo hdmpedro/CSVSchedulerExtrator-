@@ -1,0 +1,9 @@
+io\hdmpedro\scheduler\tasks\ExportTask.class
+io\hdmpedro\scheduler\config\CsvConfig.class
+io\hdmpedro\scheduler\config\SchedulerConfig.class
+io\hdmpedro\scheduler\SchedulerMain.class
+io\hdmpedro\scheduler\config\XmlConfigLoader.class
+io\hdmpedro\scheduler\config\DatabaseConfig.class
+io\hdmpedro\scheduler\config\QueryConfig.class
+io\hdmpedro\scheduler\dao\DatabaseManager.class
+io\hdmpedro\scheduler\util\CsvWriter.class
